@@ -1,0 +1,66 @@
+.landing-container{
+    background-image: url("https://i.postimg.cc/rwNm7c8L/candy-background.jpg");
+    height: 100vh;
+  } 
+  
+  @keyframes swing-left {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(-20deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  @keyframes swing-right {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(20deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .logo {
+    
+    transform-origin: center top;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 400px;
+    height: 500px;
+    width: 550px;
+  }
+  
+  .logo.swing-left {
+    animation-name: swing-left;
+  }
+  
+  .logo.swing-right {
+    animation-name: swing-right;
+  }
+  .play{
+    text-align: center;
+    margin-left: 540px;
+    height: 70px;
+    width: 200px;
+    font-size: 45px;
+    background-color: palevioletred;
+    color: white;
+    border-radius: 20px;
+    border: 4px solid white;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  
+  }
+  .play:hover{
+    transform: scale(1.1);
+  
+  }
